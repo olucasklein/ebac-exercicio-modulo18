@@ -599,6 +599,19 @@ a {
 	background-color: #3a8bcd;
 }
 
+.owl-stage {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.badge {
+	margin-left: 10px;
+}
 
 
 
@@ -726,10 +739,15 @@ a {
 		margin-top: 0px;
 	}
 
+	.owl-carousel {
+		display: flexbox;
+		flex-direction: column;
+	}
+	
 }
 
 @media (max-width: 767px) {
-
+	
 	.subscribe-form .main-content form input.button {
 		margin-top: 20px;
 	}

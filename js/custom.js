@@ -16,7 +16,7 @@ $(document).ready(function(){
 
     $('.featured-item a').addClass('btn btn-dark stretch-link');
 
-    $('.featured-item:first h4').append('  <span class="badge bg-secondary">Novo</span>')
+    $('.featured-item:first h4').append('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').start('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').html('<span class="badge bg-secondary">Novo</span>')
     // $('.featured-item:first h4').addClass('active')
@@ -48,15 +48,29 @@ $(document).ready(function(){
         alert('Produto esgotado');
 
      })
-     
-     
-     
-     
-
-
-
-
-
-
-
 })
+
+$('.owl-carousel').owlCarousel({
+   loop: false,
+   margin: 10,
+   items: 1,
+   autoHeight: true,
+   autoWidth: true,
+   navText: [
+     "<i class='fa fa-caret-left'></i>",
+     "<i class='fa fa-caret-right'></i>"
+   ],
+   autoplay: true,
+   autoplayHoverPause: true,
+   responsive: {
+     0: {
+       items: 1
+     },
+     600: {
+       items: 3
+     },
+     1000: {
+       items: 3
+     }
+   }
+ })
